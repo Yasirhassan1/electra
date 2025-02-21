@@ -14,6 +14,8 @@ import logitech_mouse from './assets/logitech_mouse.jpeg'
 import smart_watch_ultra from './assets/smart_watch_ultra.jpg'
 import bml_smart_watch from './assets/bml_smart_watch.webp'
 import lenavo_laptop from './assets/lenovo_laptop.jpg'
+import boss_pro_watch from './assets/boss_pro_watch.webp'
+import meta_quest3_vr from './assets/meta_quest3_vr.webp'
 const items = [
     {
         id: '001',
@@ -143,6 +145,22 @@ const items = [
         price: 78000,
         description: "lenavo ideapad i5 11th Generation",
         catagory: "laptop"
+    },
+    {
+        id: '017',
+        pic: boss_pro_watch,
+        title: "boss pro smart watch- starlight",
+        price: 5000,
+        description: "smart watch, with sleek design",
+        catagory: "watch"
+    },
+    {
+        id: '018',
+        pic: meta_quest3_vr,
+        title: "meta quest 3 pro VR headset",
+        price: 50000,
+        description: "Meta quest 3 pro VR headset Design campanion",
+        catagory: "watch"
     }
 ];
 

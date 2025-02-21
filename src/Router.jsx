@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import BuyPage from "./BuyPage";
-import Header from "./Header";
 import Home from "./Home";
-
+import CartSection from "./CartSection";
+import WishSection from "./WishSection";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -10,11 +10,14 @@ export const router = createBrowserRouter([
   },
   {
     path: "/BuyPage",
-    element: (
-      <>
-        <Header />
-        <BuyPage />
-      </>
-    ),
+    element:<BuyPage />,
   },
+  {
+path: "/CartSection",
+element: <CartSection/>,
+  },
+  {
+    path: "/WishSection",
+    element: <WishSection/>,
+  }
 ]);
