@@ -52,7 +52,7 @@ export default function BuyPage() {
                             <p className="text-lg font-semibold">{quantity}</p>
                             <button className="w-10 h-10 bg-gray-300 hover:bg-gray-400 transition rounded-full flex items-center justify-center text-xl" onClick={incrementQuantity}>+</button>
                         </div>
-                        <div className="buyContainer flex gap-4">
+                        <div className="buyContainer flex flex-wrap gap-4">
                             <button className="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-lg shadow-md transition-all duration-300 hover:scale-105 text-white font-semibold" onClick={() => setBuyNowBox(true)}>Buy Now</button>
                             <button className="bg-amber-400 hover:bg-amber-500 px-8 py-3 rounded-lg shadow-md transition-all duration-300 hover:scale-105 text-white font-semibold" onClick={addToCart}>Add to Cart</button>
                         </div>
@@ -60,7 +60,7 @@ export default function BuyPage() {
                 </div>
                 <p className="text-gray-700 leading-relaxed">{description}</p>
                 <h3 className="mt-8 text-lg font-semibold">You May Also Like</h3>
-                <div className="wrap flex gap-5 w-full p-4 bg-gray-200 rounded-lg overflow-x-auto">
+                <div className="wrap flex gap-5 w-full p-4 bg-gray-200 rounded-lg overflow-x-scroll">
                     {items.map((cur) => (
                         cur.catagory === catagory && <SuggestionProducts key={cur.id} pic={cur.pic} title={cur.title} id={cur.id} price={cur.price} description={cur.description} catagory={cur.catagory} />
                     ))}

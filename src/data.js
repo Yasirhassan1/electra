@@ -160,10 +160,27 @@ const items = [
         title: "meta quest 3 pro VR headset",
         price: 50000,
         description: "Meta quest 3 pro VR headset Design campanion",
-        catagory: "watch"
+        catagory: "vr"
+    },
+    {
+        id: '018',
+        pic: meta_quest3_vr,
+        title: "meta quest 3 pro VR headset",
+        price: 50000,
+        description: "Meta quest 3 pro VR headset Design campanion",
+        catagory: "vr"
     }
 ];
 
+// function search(id){
+//  items.forEach((cur)=>{
+//     if(id == cur.id){
+//         console.log(cur)
+//         return;
+//     }
+//  })
+// }
 
+// search("012")
 
 export default items;

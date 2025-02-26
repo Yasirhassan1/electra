@@ -61,10 +61,7 @@ export default function Form({ setBuyNowBox, title, id, quantity, price }) {
                 <p className="text-gray-800">{title}</p>
                 <input className="hidden" type="text" required name="Product name" value={title} readOnly />
             </div>
-            <div className="wrap flex-col hidden">
-                <label>Product ID *</label>
-                <input className="hidden" type="text" required name="product ID" value={id} readOnly />
-            </div>
+            
             <div className="wrap flex flex-col mt-2">
                 <label className='text-gray-700 font-semibold'>Total No of Items</label>
                 <p className="text-gray-800">{quantity}</p>
@@ -84,6 +81,10 @@ export default function Form({ setBuyNowBox, title, id, quantity, price }) {
                 <label className='text-gray-700 font-semibold'>Get By</label>
                 <p className="text-gray-800">{getBy(7)}</p>
                 <input className="hidden" type="text" required name="Get By" value={getBy(7)} readOnly />
+            </div>
+            <div className="wrap flex-col hidden">
+                <label>Product ID *</label>
+                <input className="hidden" type="text" required name="product ID" value={id} readOnly />
             </div>
             
             <button className="px-5 py-3 bg-black text-white rounded-md text-lg mt-6 cursor-pointer transition-transform transform hover:scale-105">Order Now</button>
