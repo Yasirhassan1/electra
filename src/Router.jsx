@@ -5,7 +5,7 @@ import CartSection from "./CartSection";
 import WishSection from "./WishSection";
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/electra",
     element: <Home />,
   },
   {
