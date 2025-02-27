@@ -6,9 +6,11 @@ import {CartColorChange} from "./CartColorChange";
 import { WishProvider } from "./UseWishList";
 import "./index.css";
 import { router } from "./Router"; // Import the router from a separate file
+import { HashRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <HashRouter>
     <CounterProvider>
     <CartColorChange>
     <WishProvider>
@@ -16,5 +18,6 @@ createRoot(document.getElementById("root")).render(
     </WishProvider>
     </CartColorChange>
     </CounterProvider>
+    </HashRouter>
   </StrictMode>
 );
