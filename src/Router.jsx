@@ -24,6 +24,6 @@ export const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/electra/", // This tells the router that everything lives under /electra
+    basename: "/electra",  // This is the critical fix.
   }
 );
